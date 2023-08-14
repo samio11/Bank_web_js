@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
+    <section class="text-center">
+      <h3 class="text-xl lg:text-5xl mt-5 lg:mt-10 mb-10">Main Bank Statements</h3>
+       <div class="max-w-screen-xl text-center text-white h-[300px] lg:h-[200px] mx-auto grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8">
+         <div class="bg-green-300">
+            <h3 class="text-3xl mt-7">Deposite</h3>
+            <p class="text-6xl">$<span>00</span> </p>
+         </div>
+         <div class="bg-red-500">
+            <h3 class="text-3xl mt-7">Withdraw</h3>
+            <p class="text-6xl">$<span>00</span> </p>
+         </div>
+         <div class="bg-slate-400 col-span-2 lg:col-span-1">
+            <h3 class="text-3xl mt-7">Total Balance</h3>
+            <p class="text-6xl">$<span>1200</span> </p>
+         </div>
+       </div>
+    </section>
     
 </body>
 </html>
