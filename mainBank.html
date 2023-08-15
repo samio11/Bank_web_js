@@ -26,32 +26,35 @@
         <div class="max-w-screen-xl text-center text-white h-[300px] lg:h-[200px] mx-auto grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8">
             <div class="bg-green-300">
                 <h3 class="text-3xl mt-7">Deposite</h3>
-                <p class="text-6xl">$<span>00</span> </p>
+                <p class="text-6xl">$<span id="deposite_previous_value">00</span> </p>
             </div>
             <div class="bg-red-500">
                 <h3 class="text-3xl mt-7">Withdraw</h3>
-                <p class="text-6xl">$<span>00</span> </p>
+                <p class="text-6xl">$<span id="withdraw_previous_value">00</span> </p>
             </div>
             <div class="bg-slate-400 col-span-2 lg:col-span-1">
                 <h3 class="text-3xl mt-7">Total Balance</h3>
-                <p class="text-6xl">$<span>1200</span> </p>
+                <p class="text-6xl">$<span id="total">1200</span> </p>
             </div>
         </div>
 
-        <div class="max-w-screen-xl mt-10 text-center text-white h-auto lg:h-[230px] mx-auto flex flex-col lg:flex-row gap-8">
+        <div class="max-w-screen-xl mt-10 text-center h-auto lg:h-[230px] mx-auto flex flex-col lg:flex-row gap-8">
+            <!-- Deposite part -->
           <div class="flex-1 space-y-5 bg-yellow-600">
-             <h3 class="text-3xl mt-7">Add Cash To Deposite</h3>
-             <input type="text" class="h-[40px] w-4/5 lg:w-3/5"> <br>
-             <button class="btn btn-outline btn-secondary btn-wide mb-10">Withdraw</button>
+             <h3 class="text-3xl mt-7 text-white">Add Cash To Deposite</h3>
+             <input type="text" class="h-[40px] w-4/5 lg:w-3/5 pl-3" id="deposite_input" placeholder="$ Enter Cash To Deposite"> <br>
+             <button class="btn btn-outline btn-secondary btn-wide mb-10" id="deposite_btn">Withdraw</button>
           </div>
+          <!-- withdraw part -->
           <div class="flex-1 space-y-5 bg-lime-600">
-            <h3 class="text-3xl mt-7">Add Cash To Deposite</h3>
-            <input type="text" class="h-[40px] w-4/5 lg:w-3/5"> <br>
-            <button class="btn btn-outline btn-secondary btn-wide mb-10">Withdraw</button>
+            <h3 class="text-3xl mt-7 text-white">Add Cash To Deposite</h3>
+            <input type="text" class="h-[40px] w-4/5 lg:w-3/5 pl-3" id="withdraw_input" placeholder="$ Enter Cash To Withdraw"> <br>
+            <button class="btn btn-outline btn-secondary btn-wide mb-10" id="withdraw_btn">Withdraw</button>
           </div>
         </div>
     </section>
-
+    <script src="./deposite.js"></script>
+   <script src="./withdraw.js"></script>
 </body>
 
 </html>
